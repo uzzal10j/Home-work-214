@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeWork214_2"
+    android:background="@drawable/bec3"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bac5"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:text="লিপ ইয়ার দেখুন " />
+
+        <EditText
+            android:id="@+id/editTextNumber2"
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="2004"
+            android:textColor="#FFEB3B"
+            android:textColorHint="#3A0F58"
+            android:background="#CCC9C9"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Click Here"
+            android:textAllCaps="false"
+            android:backgroundTint="#22023A"
+            />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="#CDDC39"
+            android:background="#3A0F58"
+            android:text="আপনি কোন সালটি লিপ ইয়ার কি দেখতে চান উপরে লিখুন " />
+    </LinearLayout>
+
+
+</LinearLayout>
