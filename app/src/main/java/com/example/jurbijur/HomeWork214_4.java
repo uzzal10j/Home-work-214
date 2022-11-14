@@ -53,9 +53,9 @@ public class HomeWork214_4 extends AppCompatActivity {
                 }else if (biology.length()<=0 ){
                     edBiology.setError("please put a Marks");
                 }else if (mathematics.length()<=0){
-                    edMathematics.setError("please put a number");
+                    edMathematics.setError("please put a Marks");
                 }else if (computer.length()<=0){
-                    edComputer.setError("please put a number");
+                    edComputer.setError("please put a Marks");
                 }else {
                     a=Float.parseFloat(physics);
                     b=Float.parseFloat(chemistry);
@@ -64,19 +64,19 @@ public class HomeWork214_4 extends AppCompatActivity {
                     e=Float.parseFloat(computer);
 
                     if (a>100){
-                        edPhysics.setError("100 er modde likun");
+                        edPhysics.setError("Please input Max 100");
                         textView8.setText("");
                     }else if (b>100){
-                        edChemistry.setError("100 er modde likun");
+                        edChemistry.setError("Please input Max 100");
                         textView8.setText("");
                     }else if (c>100){
-                        edBiology.setError("100 er modde likun");
+                        edBiology.setError("Please input Max 100");
                         textView8.setText("");
                     }else if (d>100){
-                        edMathematics.setError("100 er modde likun");
+                        edMathematics.setError("Please input Max 100");
                         textView8.setText("");
                     }else if (e>100){
-                        edComputer.setError("100 er modde likun");
+                        edComputer.setError("Please input Max 100");
                         textView8.setText("");
                     }
 
@@ -88,19 +88,19 @@ public class HomeWork214_4 extends AppCompatActivity {
                         persentig=(a+b+c+d+e)/5;
 
                         if (persentig>90){
-                            textView8.setText("Your Result Grad is A+");
+                            textView8.setText("Your Result Grade is A+");
                         }else if (persentig>80){
-                            textView8.setText("Your Result Grad is A");
+                            textView8.setText("Your Result Grade is A");
                         }else if (persentig>70){
-                            textView8.setText("Your Result Grad is B");
+                            textView8.setText("Your Result Grade is B");
                         }else if (persentig>60){
-                            textView8.setText("Your Result Grad is C");
+                            textView8.setText("Your Result Grade is C");
                         }else if (persentig>50){
-                            textView8.setText("Your Result Grad is D");
+                            textView8.setText("Your Result Grade is D");
                         }else if (persentig>40){
-                            textView8.setText("Your Result Grad is E");
+                            textView8.setText("Your Result Grade is E");
                         }else if (persentig<40){
-                            textView8.setText("Your Result Grad is Fail");
+                            textView8.setText("You are Fail");
                         }
 
                     }
