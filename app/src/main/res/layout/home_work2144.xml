@@ -20,6 +20,7 @@
         android:layout_marginTop="30dp"
         android:textSize="25sp"
         android:textColor="@color/white"
+        android:textStyle="bold"
         android:text="Marksheet" />
 
     <LinearLayout
@@ -36,6 +37,9 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textColor="#55FEFE"
+            android:textStyle="bold"
+            android:textSize="30sp"
             android:text="Physics" />
 
         <EditText
@@ -44,6 +48,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
+            android:shadowColor="@color/white"
             android:inputType="number" />
     </LinearLayout>
 
@@ -61,6 +66,9 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textColor="#55FEFE"
+            android:textStyle="bold"
+            android:textSize="30sp"
             android:text="Chemistry" />
 
         <EditText
@@ -86,6 +94,9 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textColor="#55FEFE"
+            android:textStyle="bold"
+            android:textSize="30sp"
             android:text="Biology" />
 
         <EditText
@@ -111,6 +122,9 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textColor="#55FEFE"
+            android:textStyle="bold"
+            android:textSize="30sp"
             android:text="Mathematics" />
 
         <EditText
@@ -136,6 +150,9 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textColor="#55FEFE"
+            android:textStyle="bold"
+            android:textSize="30sp"
             android:text="Computer" />
 
         <EditText
@@ -145,6 +162,31 @@
             android:layout_weight="1"
             android:ems="10"
             android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        >
+
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="Result Here" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#BC6060"
+            android:textColor="#55FEFE"
+            android:text="Button" />
     </LinearLayout>
 
 </LinearLayout>
