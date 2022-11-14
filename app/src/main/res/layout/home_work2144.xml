@@ -48,7 +48,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:shadowColor="@color/white"
+            android:hint="Max 100"
+            android:textColor="@color/white"
             android:inputType="number" />
     </LinearLayout>
 
@@ -77,6 +78,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
+            android:hint="Max 100"
+            android:textColor="@color/white"
             android:inputType="number" />
     </LinearLayout>
 
@@ -105,6 +108,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
+            android:hint="Max 100"
+            android:textColor="@color/white"
             android:inputType="number" />
     </LinearLayout>
 
@@ -133,6 +138,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
+            android:hint="Max 100"
+            android:textColor="@color/white"
             android:inputType="number" />
     </LinearLayout>
 
@@ -161,6 +168,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
+            android:hint="Max 100"
+            android:textColor="@color/white"
             android:inputType="number" />
     </LinearLayout>
 
@@ -177,7 +186,9 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:gravity="center"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="25sp"
             android:text="Result Here" />
 
         <Button

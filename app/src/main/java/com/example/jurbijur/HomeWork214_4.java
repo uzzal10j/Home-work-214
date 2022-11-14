@@ -13,7 +13,7 @@ public class HomeWork214_4 extends AppCompatActivity {
     EditText edPhysics,edChemistry,edBiology,edMathematics,edComputer;
     TextView textView8;
     Button button4;
-    float a,b,c,d,e;
+    float a,b,c,d,e,persentig;
 
 
     @Override
@@ -46,22 +46,67 @@ public class HomeWork214_4 extends AppCompatActivity {
                 String mathematics = edMathematics.getText().toString();
                 String computer = edComputer.getText().toString();
 
-                if (physics.length()<=0 && chemistry.length() <=0 && biology.length()<=0 && mathematics.length()<=0 && computer.length()<=0){
-                    edPhysics.setError("please put a number");
-                    edChemistry.setError("please put a number");
-                    edBiology.setError("please put a number");
+                if (physics.length()<=0){
+                    edPhysics.setError("please put  Marks");
+                }else if (chemistry.length() <=0 ){
+                    edChemistry.setError("please put a Marks");
+                }else if (biology.length()<=0 ){
+                    edBiology.setError("please put a Marks");
+                }else if (mathematics.length()<=0){
                     edMathematics.setError("please put a number");
+                }else if (computer.length()<=0){
                     edComputer.setError("please put a number");
-                }else if (chemistry.length() <=0 && physics.length()>=0 && biology.length()>=0 && mathematics.length()>=0 && computer.length()>=0){
-                    edChemistry.setError("please put number");
-                }else if (biology.length()<=0 && chemistry.length() >=0 && physics.length()>=0 && mathematics.length()>=0 && computer.length()>=0){
-                    edBiology.setError("jhfjkdhkj");
-                }else if (biology.length()>=0 && chemistry.length() >=0 && physics.length()<=0 && mathematics.length()>=0 && computer.length()>=0){
-                    edPhysics.setError("please put a number");
-                }else if (biology.length()>=0 && chemistry.length() >=0 && physics.length()>=0 && mathematics.length()<=0 && computer.length()>=0){
-                    edMathematics.setError("please put a number");
-                }else if (biology.length()>=0 && chemistry.length() >=0 && physics.length()>=0 && mathematics.length()>=0 && computer.length()<=0){
-                    edComputer.setError("please put a number");
+                }else {
+                    a=Float.parseFloat(physics);
+                    b=Float.parseFloat(chemistry);
+                    c=Float.parseFloat(biology);
+                    d=Float.parseFloat(mathematics);
+                    e=Float.parseFloat(computer);
+
+                    if (a>100){
+                        edPhysics.setError("100 er modde likun");
+                        textView8.setText("");
+                    }else if (b>100){
+                        edChemistry.setError("100 er modde likun");
+                        textView8.setText("");
+                    }else if (c>100){
+                        edBiology.setError("100 er modde likun");
+                        textView8.setText("");
+                    }else if (d>100){
+                        edMathematics.setError("100 er modde likun");
+                        textView8.setText("");
+                    }else if (e>100){
+                        edComputer.setError("100 er modde likun");
+                        textView8.setText("");
+                    }
+
+                    else {
+
+                    if (a <=0 || b<=0 || c<=0 || d<=0 || e<=0){
+                        textView8.setText("Your Result Grad is fail");
+                    }else {
+                        persentig=(a+b+c+d+e)/5;
+
+                        if (persentig>90){
+                            textView8.setText("Your Result Grad is A+");
+                        }else if (persentig>80){
+                            textView8.setText("Your Result Grad is A");
+                        }else if (persentig>70){
+                            textView8.setText("Your Result Grad is B");
+                        }else if (persentig>60){
+                            textView8.setText("Your Result Grad is C");
+                        }else if (persentig>50){
+                            textView8.setText("Your Result Grad is D");
+                        }else if (persentig>40){
+                            textView8.setText("Your Result Grad is E");
+                        }else if (persentig<40){
+                            textView8.setText("Your Result Grad is Fail");
+                        }
+
+                    }
+
+                    }
+
                 }
 
 
@@ -72,22 +117,3 @@ public class HomeWork214_4 extends AppCompatActivity {
     }
 }
 
-////
-///float marks = (a+b+c+d+e)/5;
-               ///         if (marks >=90){
-               ///                 textView8.setText("aponar GPA = A+ " );
-                 ///               }else if (marks>=80){
-                  //              textView8.setText("aponar GPA = A " );
-                  //              }else if (marks>=70){
-                   //             textView8.setText("aponar GPA = B " );
-                  //              }else if (marks>=60){
-                    //            textView8.setText("aponar GPA = C " );
-                  //              }else if (marks>=40){
-                     //           textView8.setText("aponar GPA = D " );
-                     //           }else if (marks<40){
-    //    textView8.setText("aponar GPA = F " );
-   //     }
-
-
-
-     //   textView8.setText("Dear user please put a number max 100");
