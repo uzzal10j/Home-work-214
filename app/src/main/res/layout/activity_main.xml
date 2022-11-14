@@ -81,7 +81,7 @@
 
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                app:lottie_rawRes="@raw/lod"
+                app:lottie_rawRes="@raw/lod2"
                 app:lottie_autoPlay="true"
                 app:lottie_loop="true"/>
 
@@ -125,7 +125,7 @@
 
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                app:lottie_rawRes="@raw/lod"
+                app:lottie_rawRes="@raw/lod3"
                 app:lottie_autoPlay="true"
                 app:lottie_loop="true"/>
 
