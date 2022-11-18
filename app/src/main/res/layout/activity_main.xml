@@ -152,7 +152,7 @@
                 android:id="@+id/animationView"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                app:lottie_rawRes="@raw/lod"
+                app:lottie_rawRes="@raw/result"
                 app:lottie_autoPlay="true"
                 app:lottie_loop="true"/>
 
@@ -195,7 +195,7 @@
 
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                app:lottie_rawRes="@raw/lod3"
+                app:lottie_rawRes="@raw/lod5"
                 app:lottie_autoPlay="true"
                 app:lottie_loop="true"/>
 
