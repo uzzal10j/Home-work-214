@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         ley214_3 = findViewById(R.id.ley214_3);
         ley214_4 = findViewById(R.id.ley214_4);
         ley214_5 = findViewById(R.id.ley214_5);
+        ley214_6 = findViewById(R.id.ley214_6);
 
 
         ley214_1.setOnClickListener(new View.OnClickListener() {
@@ -88,6 +89,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        ley214_6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent myintent = new Intent(MainActivity.this,HomeWork214_6.class);
+                startActivity(myintent);
+
+
+            }
+        });
 
 
 

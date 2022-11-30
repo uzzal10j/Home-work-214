@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeWork214_6"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_margin="10dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="দৈনিক ব্যবহারের ভিত্তিতে মাসিক ইউনিট দেখুন "
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        >
+        <TextView
+            android:id="@+id/fan"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="80 Watt Fan :-"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            />
+        <EditText
+            android:id="@+id/fanEd"
+            android:layout_toRightOf="@id/fan"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="আপনার 80W Fan কতটি"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        >
+        <TextView
+            android:id="@+id/light30"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="30 Watt Light :-"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            />
+        <EditText
+            android:id="@+id/light30Ed"
+            android:layout_toRightOf="@id/fan"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="আপনার 30W Light কতটি"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        >
+        <TextView
+            android:id="@+id/light40"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="40 Watt Light  :-"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            />
+        <EditText
+            android:id="@+id/light40Ed"
+            android:layout_toRightOf="@id/fan"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="আপনার 40W Light কতটি"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        >
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="32 inch 28 Watt TV :-"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            />
+        <EditText
+            android:id="@+id/tvEd"
+            android:layout_toRightOf="@id/fan"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="আপনার TV কতটি"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        >
+        <TextView
+            android:id="@+id/motor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Water Motor :-"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            />
+        <EditText
+            android:id="@+id/motorEd"
+            android:layout_toRightOf="@id/fan"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="কত ঘোড়া 0.5 or 1 or 2"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberDecimal"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        >
+        <TextView
+            android:id="@+id/freez"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="44.98Watt freezers :-"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            />
+        <EditText
+            android:id="@+id/freezEd"
+            android:layout_toRightOf="@id/fan"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="আপনার ফ্রিজ কতটি?"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/celUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="your unit"/>
+
+    <TextView
+        android:id="@+id/tvUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aponar unit"
+        android:textSize="15sp"/>
+
+
+
+</LinearLayout>
