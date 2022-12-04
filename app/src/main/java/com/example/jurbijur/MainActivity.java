@@ -1,9 +1,11 @@
 package com.example.jurbijur;
 
-import android.annotation.SuppressLint;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,12 +16,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    LinearLayout ley214_1,ley214_2,ley214_3,ley214_4,ley214_5,ley214_6;
+    LinearLayout ley214_1,ley214_2,ley214_3,ley214_4,ley214_5,ley214_6,mainLey,ley2;
 
     EditText editTextNumber,editTextNumber2,editTextNumber3;
-    Button button;
+    Button button,reload;
 
-    @SuppressLint("SetTextI18n")
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,11 +34,28 @@ public class MainActivity extends AppCompatActivity {
         ley214_4 = findViewById(R.id.ley214_4);
         ley214_5 = findViewById(R.id.ley214_5);
         ley214_6 = findViewById(R.id.ley214_6);
+        mainLey = findViewById(R.id.mainLey);
+        ley2 = findViewById(R.id.ley2);
+
+
+
+       ////=============================Internet Check Start========================================///
+        ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
+        if (networkInfo!=null && networkInfo.isConnected()){
+
+
+        ////=============================Internet Check End========================================///
+
+
+            mainLey.setVisibility(View.VISIBLE);
+            ley2.setVisibility(View.GONE);
 
 
         ley214_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
 
                 Intent myintent = new Intent(MainActivity.this,HomeWork214_1.class);
                 startActivity(myintent);
@@ -102,12 +122,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-
+        }else {
+            ley2.setVisibility(View.VISIBLE);
+            mainLey.setVisibility(View.GONE);
 
         }
 
-    ///=============================
+        }
+
+    ///=============================OnBackPassed Start===========================///
     @Override
     public void onBackPressed() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -117,7 +140,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 //if user pressed "yes", then he is allowed to exit from application
-                finish();
+                finishAndRemoveTask();
             }
         });
         builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
@@ -130,8 +153,7 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog alert = builder.create();
         alert.show();
 
-
     }
-    ///===================================
+    ///=============================OnBackPassed end===========================///
 }
 
